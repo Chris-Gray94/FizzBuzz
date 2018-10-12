@@ -13,8 +13,22 @@ namespace Tests
             Assert.Equal("Fizz", fizz);
         }
 		
-		private String ReturnFizz(int number){          
+		private String ReturnFizz(int number)
+        {          
             return "Fizz";
 		}
+
+        [Fact]
+        public void ReturnBuzzWhenMultipleFive()
+        {
+            int number = 5;
+            var buzz = ReturnBuzz(number);
+            Assert.Equal("Buzz", buzz);
+        }
+
+        private String ReturnBuzz(int number)
+        {
+            return "Buzz";
+        }
     }
 }
