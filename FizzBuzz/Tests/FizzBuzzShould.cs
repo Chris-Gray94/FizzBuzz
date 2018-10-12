@@ -30,5 +30,20 @@ namespace Tests
         {
             return "Buzz";
         }
+
+        [Fact]
+        public void ReturnFizzBuzzWhenMultipleThreeAndFive()
+        {
+            int fizzNumber = 3;
+            int buzzNumber = 5;
+            int number = buzzNumber * fizzNumber;
+            var fizz = ReturnFizz(number);
+            Assert.Equal("Fizz", fizz);
+        }
+
+        private String ReturnFizzBuzz(int fizzNumber,int buzzNumber)
+        {
+            return "FizzBuzz";
+        }
     }
 }
