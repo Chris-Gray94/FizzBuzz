@@ -36,12 +36,11 @@ namespace Tests
         {
             int fizzNumber = 3;
             int buzzNumber = 5;
-            int number = buzzNumber * fizzNumber;
-            var fizz = ReturnFizz(number);
-            Assert.Equal("Fizz", fizz);
+            var fizzBuzz = ReturnFizzBuzz(fizzNumber * buzzNumber);
+            Assert.Equal("FizzBuzz", fizzBuzz);
         }
 
-        private String ReturnFizzBuzz(int fizzNumber,int buzzNumber)
+        private String ReturnFizzBuzz(int fizzNumber)
         {
             return "FizzBuzz";
         }
