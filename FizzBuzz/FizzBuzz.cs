@@ -4,8 +4,9 @@ namespace fizzbuzz
 {
     public class FizzBuzz
     {
-        public int FizzBuzzNumber(int fizzBuzzNumber)
+        public int FizzBuzzNumber()
         {
+            int fizzBuzzNumber;
             for (fizzBuzzNumber = 1; fizzBuzzNumber <= 100; fizzBuzzNumber++)
             {
                 if (fizzBuzzNumber % 3 == 0 && fizzBuzzNumber % 5 == 0)
@@ -33,7 +34,7 @@ namespace fizzbuzz
         public static void Main(string[] args)
         {
             FizzBuzz fb = new FizzBuzz();
-            fb.FizzBuzzNumber(15);
+            fb.FizzBuzzNumber();
         }
     }
 }

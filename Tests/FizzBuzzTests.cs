@@ -11,26 +11,22 @@ namespace FizzBuzzTests
         [Fact]
         public void Fizz_WhenMultipleThree_ReturnFizz()   
         {
-            int number = 3;
-            var fizz = fb.FizzBuzzNumber(number);                 
-            Assert.Equal(number, fizz);
+            var fizz = fb.FizzBuzzNumber();                 
+            Assert.Equal(3, fizz);
         }
 
         [Fact]
         public void Buzz_WhenMultipleFive_ReturnBuzz()
         {
-            int number = 5;
-            var buzz = fb.FizzBuzzNumber(number);
-            Assert.Equal(number, buzz);
+            var buzz = fb.FizzBuzzNumber();
+            Assert.Equal(5, buzz);
         }
         
         [Fact]
         public void FizzBuzz_WhenMultipleThreeAndFive_ReturnFizzBuzz()
         {
-            int fizzNumber = 3;
-            int buzzNumber = 5;
-            var fizzBuzz = fb.FizzBuzzNumber(fizzNumber * buzzNumber);
-            Assert.Equal(fizzNumber * buzzNumber, fizzBuzz);
+            var fizzBuzz = fb.FizzBuzzNumber();
+            Assert.Equal(15, fizzBuzz);
         }
     }
 }
